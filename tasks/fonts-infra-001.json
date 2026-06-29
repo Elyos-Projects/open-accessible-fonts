@@ -1,0 +1,34 @@
+{
+  "id": "fonts-infra-001",
+  "title": "Repo scaffold + reproducible build pipeline (UFO -> fontmake -> OTF/TTF/variable/WOFF2)",
+  "project": "open-accessible-fonts",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["typography", "open-source", "accessibility", "i18n", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-accessible-fonts produces OFL-licensed fonts for under-served scripts and low-vision/dyslexia accessibility. Before any glyph work, the project needs a reproducible, open-tool build pipeline and a Google-Fonts-compatible repo layout so every later family is cheaper to build, QA, and upstream. No partner or requesting community is secured yet; this foundation task is partner-independent.",
+  "objective": "Stand up a version-controlled font repo whose minimal placeholder UFO + designspace builds reproducibly to static OTF/TTF, a variable TTF, and WOFF2 via a single documented command, using only open-source tooling pinned by a lockfile.",
+  "acceptanceCriteria": [
+    "A minimal UFO + designspace builds to static OTF, static TTF, variable TTF, and WOFF2 via one documented command (fontmake + gftools + fontTools).",
+    "All build tooling is pinned in a lockfile; a clean-environment rebuild yields byte-stable artifacts (reproducible-build check passes).",
+    "Repo follows Google Fonts upstream layout: sources/, fonts/, documentation/, OFL.txt, FONTLOG.txt, METADATA.",
+    "README documents prerequisites and the build command; no proprietary tools are required to build.",
+    "No secrets, tokens, or API keys are written to logs, build artifacts, or committed files."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/fontmake",
+    "https://github.com/googlefonts/gftools",
+    "https://github.com/fonttools/fonttools",
+    "https://unifiedfontobject.org/",
+    "PLAN.md (sections 6-7: architecture, licensing & provenance)"
+  ],
+  "output": "A pull request adding the font repo scaffold and reproducible build pipeline, with a placeholder UFO that builds to OTF/TTF/variable/WOFF2 and a README documenting the open-tool build.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
