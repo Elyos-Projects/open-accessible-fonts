@@ -1,0 +1,36 @@
+{
+  "id": "fonts-script-201",
+  "title": "Secure script community partner + co-sign orthography & design brief",
+  "project": "open-accessible-fonts",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["i18n", "typography", "open-source", "accessibility", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M2 is explicitly blocked on a community partner — no glyph drawing for any under-served script may begin until a named script authority or language community has been secured and has co-signed the orthography and design brief. This is the M2 entry gate, as defined in PLAN.md. Depends on the script gap analysis (fonts-research-004) having produced a prioritized shortlist and the governance protocol (fonts-gov-006) being in place.",
+  "objective": "Secure a named script authority or language-community partner, complete community co-design outreach, and co-produce and co-sign an orthography specification and design brief for the target script before any glyph drawing begins.",
+  "acceptanceCriteria": [
+    "A named community or script-authority partner confirms the need for the font in writing; verifiedNeed is flipped to true on this task and all dependent M2 tasks once this confirmation is received.",
+    "The partner is credited as co-designer in all project artifacts (FONTLOG, provenance.json, README); right to be named or anonymous respected.",
+    "Orthography specification, target language(s), glyph repertoire, and OpenType shaping requirements are co-signed by the community partner.",
+    "Community veto and change-request process is acknowledged by both parties per the governance protocol (fonts-gov-006).",
+    "Reserved Font Name is agreed with the partner before proceeding; any trademark conflict identified and resolved.",
+    "Document is CC-BY-4.0; no identifiable personal data included without explicit consent."
+  ],
+  "resources": [
+    "https://scriptsource.org/",
+    "https://www.unicode.org/scripts/",
+    "https://www.sil.org/resources/nrsi",
+    "PLAN.md (section 2: verified need & partner status)",
+    "PLAN.md (section 9: M2 entry gate)",
+    "fonts-research-004 (gap analysis and prioritization shortlist — must be completed first)"
+  ],
+  "output": "A co-signed orthography specification and design brief document (CC-BY-4.0) for the target script, with recorded community partner confirmation, co-design protocol acknowledgement, and Reserved Font Name agreement, merged into the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

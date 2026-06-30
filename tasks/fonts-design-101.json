@@ -1,0 +1,36 @@
+{
+  "id": "fonts-design-101",
+  "title": "Design brief + glyph set spec for low-vision/dyslexia-informed Latin family",
+  "project": "open-accessible-fonts",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["typography", "accessibility", "design-spec", "open-source", "i18n"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M1 is the accessibility-first Latin family, chosen first because it is partner-light (no script community gate). Before any glyph drawing begins, the project needs a design brief and glyph-set specification that translates the accessibility evidence brief (fonts-research-005) and governance framework (fonts-gov-006) into concrete type-design requirements. The brief must remain within non-medical framing and the honesty constraints established in M0.",
+  "objective": "Produce a design brief and glyph set specification for the accessibility-first Latin family, covering design rationale, the GF Latin Core glyph set plus the accessibility-critical differentiation set, axis strategy (variable weight at minimum), and the mandated non-medical framing text to appear in all family artifacts.",
+  "acceptanceCriteria": [
+    "Design brief references and applies the accessibility evidence brief (fonts-research-005) findings without over-claiming clinical or medical benefit.",
+    "Glyph set specification covers GF Latin Core and the accessibility-critical differentiation set: distinct, non-confusable forms for I/l/1, O/0, b/d/p/q, rn/m, and other high-confusion pairs.",
+    "Brief specifies the variable-axis strategy: at minimum a weight axis; optical-size axis if justified, with rationale stated.",
+    "Brief includes the mandated non-medical framing text to appear in README, specimens, and usage guide.",
+    "Brief addresses original clean-room drawing vs. OFL-derivative approach and records the decision with license rationale.",
+    "Brief is reviewed and approved by the maintainer and, once secured, an accessibility/vision specialist; sign-off recorded.",
+    "Document is CC-BY-4.0; no proprietary reference material is incorporated."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/glyphsets",
+    "https://brailleinstitute.org/freefont",
+    "PLAN.md (section 6: solution approach)",
+    "TASKS.md (acceptance criteria for fonts-design-102)",
+    "fonts-research-005 (accessibility evidence brief — must be completed first)"
+  ],
+  "output": "A design brief and glyph-set specification document (CC-BY-4.0) for the accessibility-first Latin family, covering design rationale, glyph repertoire, variable-axis strategy, and non-medical framing text, merged into the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

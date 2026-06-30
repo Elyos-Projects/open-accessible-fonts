@@ -1,0 +1,33 @@
+{
+  "id": "fonts-script-205",
+  "title": "Second under-served script: community co-design, drawing, review, and release",
+  "project": "open-accessible-fonts",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["typography", "i18n", "design-spec", "open-source", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The M2 pattern (fonts-script-201 through fonts-script-204) establishes the process for community co-designed script fonts. A second script is a backlog/future item, unscheduled until a second named community partner is secured. As with M2, this task must not start without a confirmed partner — verifiedNeed=false and the M2 entry gate applies. No script selection or drawing should occur before a partner co-signs the orthography and design brief.",
+  "objective": "Replicate the full M2 community co-design process (partner outreach, co-signed brief, glyph drawing, native-reader review, release) for a second under-served script with a secured community partner.",
+  "acceptanceCriteria": [
+    "A second named script authority or language-community partner is secured in writing; verifiedNeed remains false until this happens.",
+    "Orthography specification, glyph repertoire, and shaping requirements are co-signed by the second community partner before any drawing begins.",
+    "Glyph set drawn in UFO; OpenType GSUB/GPOS shaping implemented and verified clean via HarfBuzz against community test strings.",
+    "Native-reader correctness review passed (100%) before release.",
+    "Tagged release with static + variable + WOFF2 + specimen + OFL.txt + FONTLOG.txt crediting the community + provenance.json + language-coverage report.",
+    "At least one adoption event: community use confirmed or upstream (Noto/GF) PR initiated."
+  ],
+  "resources": [
+    "PLAN.md (section 9: M2 roadmap)",
+    "TASKS.md (M2 tasks fonts-script-201 through fonts-script-204 as template)",
+    "fonts-research-004 (gap analysis and prioritization shortlist)"
+  ],
+  "output": "A complete second community co-designed script font released as a tagged PR with static + variable + WOFF2, type specimen, native-reader sign-off, language-coverage report, and provenance documentation.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

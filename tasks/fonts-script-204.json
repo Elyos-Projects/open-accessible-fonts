@@ -1,0 +1,35 @@
+{
+  "id": "fonts-script-204",
+  "title": "Release script font + specimen + language-coverage report under OFL",
+  "project": "open-accessible-fonts",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["typography", "i18n", "open-source", "accessibility", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M2 culminates in a tagged release of the community co-designed script font after native-reader correctness review (fonts-script-203) passes. Per the Elyos quality bar, a font is delivered — not merely merged — when it passes automated QA, has complete OFL/FONTLOG/provenance artifacts, and achieves at least one real adoption event: community use or Noto/Google Fonts upstreaming initiated.",
+  "objective": "Package and tag the first release of the community co-designed script font with static OTF/TTF, variable TTF, WOFF2, type specimen, language-coverage report, OFL.txt/FONTLOG.txt/provenance.json crediting the community, and at least one adoption event.",
+  "acceptanceCriteria": [
+    "Tagged release includes: static OTF, static TTF, variable TTF, WOFF2, type specimen, OFL.txt, FONTLOG.txt (crediting the community as co-designer), provenance.json.",
+    "Language-coverage report shows the primary target language(s) fully covered per gflanguages/Hyperglot.",
+    "Native-reader correctness review (fonts-script-203) has passed (100%) before this release proceeds.",
+    "All CI/QA gates pass: FontBakery Universal + GF profiles (no FAIL), HarfBuzz shaping diff clean against community test strings, reproducible build verified.",
+    "At least one adoption event is documented: community use confirmed, or an upstream PR to Noto/Google Fonts initiated.",
+    "No secrets, tokens, or API keys are present in release artifacts or CI logs."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/noto-fonts",
+    "https://github.com/googlefonts/fonts",
+    "https://github.com/googlefonts/gflanguages",
+    "PLAN.md (section 8: definition of shipped)",
+    "TASKS.md (acceptance criteria for fonts-script-204)"
+  ],
+  "output": "A pull request and tagged release of the community co-designed script font including static + variable + WOFF2, type specimen, language-coverage report, complete OFL/FONTLOG/provenance artifacts crediting the community, and at least one documented adoption event.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

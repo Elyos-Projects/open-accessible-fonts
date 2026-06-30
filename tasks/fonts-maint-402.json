@@ -1,0 +1,33 @@
+{
+  "id": "fonts-maint-402",
+  "title": "Maintenance playbook + outcome-tracking ledger (including null results)",
+  "project": "open-accessible-fonts",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["open-source", "typography", "accessibility", "governance", "i18n"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M4 sustainability requires that the project can outlive its initial contributors. This task produces the maintenance playbook (how to triage issues, re-release with updated tooling, respond to Unicode/orthography updates, and handle community change-requests) and the public outcome-tracking ledger (adoption events and legibility findings, including null/mixed results). The honesty clause requires null/mixed legibility results to be recorded, not suppressed.",
+  "objective": "Write and publish a maintenance playbook covering issue triage, tooling updates, Unicode/orthography changes, and community change-requests, plus a public outcome-tracking ledger recording adoption events and legibility findings (including null/mixed results).",
+  "acceptanceCriteria": [
+    "Maintenance playbook covers: issue triage, re-building and re-releasing with updated tooling (fontmake/gftools/fontbakery), responding to Unicode/orthography updates, and handling community change-requests per the governance protocol.",
+    "Public outcome-tracking ledger records: all adoption events (upstream acceptance, document deployments, community usage) and any legibility validation findings.",
+    "Ledger includes null and mixed legibility results if any validation was conducted; the honesty clause (O8) is explicitly referenced.",
+    "Both documents are CC-BY-4.0 and versioned in the repository.",
+    "No identifiable personal data is included; contributor credit is consent-only.",
+    "Documents are structured so a new maintainer can act on them without context from the original team."
+  ],
+  "resources": [
+    "PLAN.md (section 4: success metrics — O8 honesty clause)",
+    "PLAN.md (section 15: sustainability & maintenance)",
+    "TASKS.md (acceptance criteria for fonts-maint-402)"
+  ],
+  "output": "A maintenance playbook and outcome-tracking ledger (both CC-BY-4.0) covering issue triage, tooling updates, community change-requests, adoption events, and legibility findings (including null results), merged into the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

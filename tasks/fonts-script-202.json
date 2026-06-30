@@ -1,0 +1,36 @@
+{
+  "id": "fonts-script-202",
+  "title": "Draw script glyphs + author OpenType GSUB/GPOS shaping for the target script",
+  "project": "open-accessible-fonts",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["typography", "i18n", "design-spec", "open-source", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M2 script glyph drawing is blocked on the community partner and co-signed brief (fonts-script-201). Once the brief is co-signed, this is the core craft work: drawing the agreed glyph repertoire in UFO format, implementing the required OpenType GSUB/GPOS shaping rules, and verifying the result against community-provided test strings via HarfBuzz. Wrong forms can harm the community; the CI shaping gate and native-reader review (fonts-script-203) are mandatory before release.",
+  "objective": "Draw the agreed script glyph set in UFO 3 + designspace as clean-room originals per the co-signed design brief, implement required OpenType GSUB/GPOS contextual forms, marks, and ligatures, and verify that HarfBuzz shaping is clean against community-provided test strings and that FontBakery passes.",
+  "acceptanceCriteria": [
+    "Glyph set covers the agreed repertoire from the co-signed design brief (fonts-script-201); no glyphs added without community approval.",
+    "OpenType GSUB/GPOS features implement all required contextual substitutions, mark positioning, and ligatures for the script; authored in .fea format and validated against HarfBuzz.",
+    "HarfBuzz shaping diff is clean against the community-provided test string set; any diff is reviewed and approved by the community partner.",
+    "FontBakery Universal and GF profiles pass with no FAIL; WARNs triaged and documented.",
+    "provenance.json records every glyph source as original clean-room or community-provided reference with explicit permission; no proprietary derivation.",
+    "Variable weight axis (minimum) builds; static instances export correctly."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/fontmake",
+    "https://github.com/fonttools/fonttools",
+    "https://harfbuzz.github.io/",
+    "https://github.com/googlefonts/diffenator2",
+    "PLAN.md (section 6: pipeline and key decisions)",
+    "TASKS.md (acceptance criteria for fonts-script-202)"
+  ],
+  "output": "A pull request adding the UFO source, designspace, OpenType .fea shaping code, and built binaries for the community-co-designed script font, with provenance.json, passing FontBakery, and clean HarfBuzz shaping diff against community test strings.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

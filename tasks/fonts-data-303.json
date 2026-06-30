@@ -1,0 +1,34 @@
+{
+  "id": "fonts-data-303",
+  "title": "Language-support matrix dataset (Hyperglot/gflanguages) for shipped fonts",
+  "project": "open-accessible-fonts",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["i18n", "typography", "open-source", "accessibility", "data"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M3 requires a machine-readable language-support dataset so downstream users and evaluators can programmatically determine which languages are covered by which shipped families. This dataset is also the evidence base for success metric O2 (language orthographies covered). It must be CC-BY-4.0 and include methodology so the coverage claims are reproducible and honest.",
+  "objective": "Produce and publish a machine-readable language-support matrix for all shipped font families, generated from Hyperglot/gflanguages analysis, CC-BY-4.0, with methodology documented.",
+  "acceptanceCriteria": [
+    "Machine-readable dataset (JSON or CSV) covers all shipped families with per-language support status per Hyperglot/gflanguages analysis.",
+    "Methodology is documented: which tool version was used, how language support is defined (full vs. auxiliary coverage), and what counts as 'supported'.",
+    "Dataset is CC-BY-4.0 licensed and versioned alongside the font releases.",
+    "Dataset is reproducible: a documented command can regenerate it from the shipped fonts and pinned Hyperglot/gflanguages versions.",
+    "No identifiable personal data is included in the dataset.",
+    "Dataset is correct: spot-checked against manual verification for at least the primary languages of shipped script families."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/hyperglot",
+    "https://github.com/googlefonts/gflanguages",
+    "PLAN.md (section 4: success metrics — O2)",
+    "TASKS.md (acceptance criteria for fonts-data-303)"
+  ],
+  "output": "A machine-readable language-support matrix dataset (CC-BY-4.0) for all shipped font families, with methodology documentation, committed to the repository and versioned alongside font releases.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

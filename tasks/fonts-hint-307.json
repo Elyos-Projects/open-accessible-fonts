@@ -1,0 +1,34 @@
+{
+  "id": "fonts-hint-307",
+  "title": "Manual TrueType hinting for legacy low-DPI Windows rendering",
+  "project": "open-accessible-fonts",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["typography", "tooling", "open-source", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Manual per-glyph TrueType hinting is an intensive, specialist task that significantly improves rendering on legacy low-DPI Windows systems (GDI rendering, older ClearType). The project currently relies on gftools autohinting, which is adequate for most modern rendering environments. Manual hinting is a backlog item, only pursued if a specific partner or user population requires it for a legacy deployment. Very slow work; narrow real-world impact given modern display DPI trends.",
+  "objective": "Apply manual per-glyph TrueType hinting to the shipped Latin family (and applicable script families if required by the partner) to improve rendering quality on legacy low-DPI Windows environments, if and only if a partner confirms the need.",
+  "acceptanceCriteria": [
+    "A named partner or user population has confirmed they require manual hinting for a specific low-DPI Windows deployment; verifiedNeed is updated when this confirmation is received.",
+    "Manual TrueType hints applied to the core glyph set; rendering on legacy GDI/ClearType at body sizes (10–14pt) is visibly improved relative to autohinting.",
+    "Hinted builds pass FontBakery (no additional FAILs introduced by hinting); hinting tool and version recorded.",
+    "Reproducible build still produces byte-stable hinted binaries from source.",
+    "No manual hinting work begins without a confirmed partner need; if no partner need materializes, this task remains open/unstarted.",
+    "No secrets, tokens, or API keys introduced in hinting tooling or CI."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/ttfautohint",
+    "https://freetype.org/ttinstructions.html",
+    "PLAN.md (section 5: out of scope — hinting)",
+    "TASKS.md (backlog — fonts-hint-307: only if a partner requires)"
+  ],
+  "output": "A pull request adding manual TrueType hinting to the specified font families, with rendered-output comparisons on legacy low-DPI Windows and all CI gates passing.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

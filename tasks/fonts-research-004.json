@@ -1,0 +1,36 @@
+{
+  "id": "fonts-research-004",
+  "title": "Under-served-script gap analysis + prioritization shortlist",
+  "project": "open-accessible-fonts",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["typography", "i18n", "accessibility", "open-source", "research"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-accessible-fonts plans to produce fonts for under-served scripts, but no specific script or community partner is secured yet. Before approaching any community, the project needs an evidence-based prioritization shortlist that identifies which scripts have the greatest unmet need for a free, correct, OFL font. This informs outreach and the M2 entry gate.",
+  "objective": "Produce a gap analysis of under-served writing systems — scripts where free, complete, correctly-shaping OFL font coverage is absent or critically insufficient — and derive a prioritized shortlist (≥5 candidates) with rationale, existing coverage, and suggested community-outreach contacts for each.",
+  "acceptanceCriteria": [
+    "Analysis surveys the major under-served-script candidates (e.g. Adlam, N'Ko, Tifinagh, Vai, Osage, Ol Chiki, Canadian Aboriginal Syllabics, extended-Latin African orthographies) against existing free font coverage (Noto, SIL, community fonts).",
+    "Each candidate entry documents: script name, primary language(s) and speaker/learner population, Unicode encoding status, current font coverage gaps (missing weights, broken shaping, missing diacritic forms), and candidate community outreach contacts.",
+    "A prioritized shortlist of ≥5 scripts is produced with selection rationale (gap severity, community readiness, Elyos mission fit).",
+    "Analysis is honest about data quality: population figures cited with source; font-coverage gaps verified against actual font testing where feasible.",
+    "Document is CC-BY-4.0 licensed; no personal data or identifiable contributor information included without consent.",
+    "verifiedNeed remains false until a named partner from the shortlist confirms interest."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/noto-fonts",
+    "https://scriptsource.org/",
+    "https://www.unicode.org/scripts/",
+    "https://github.com/googlefonts/gflanguages",
+    "https://github.com/googlefonts/hyperglot",
+    "PLAN.md (section 2: problem & beneficiaries)"
+  ],
+  "output": "A published gap-analysis document (CC-BY-4.0) covering under-served scripts with a prioritized shortlist of ≥5 candidates, each with coverage gaps documented and outreach contacts suggested, merged into the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

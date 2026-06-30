@@ -1,0 +1,34 @@
+{
+  "id": "fonts-legal-003",
+  "title": "Licensing & provenance framework (OFL.txt / FONTLOG.txt / provenance.json + clean-room policy)",
+  "project": "open-accessible-fonts",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["typography", "open-source", "licensing", "provenance", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-accessible-fonts is OFL-only. Before any glyph work begins, the project must establish a clean-room policy, provenance model, and licensing framework that makes the output legally redistributable globally. This is a foundational governance document task that is partner-independent and can proceed immediately.",
+  "objective": "Define and document the project's licensing framework: OFL.txt and FONTLOG.txt templates with Reserved Font Name policy, a provenance.json schema for per-glyph-source traceability, a clean-room policy with prohibited-inputs allow/deny list, and an output-license matrix covering fonts (OFL-1.1), code (MIT), and docs/data (CC-BY-4.0).",
+  "acceptanceCriteria": [
+    "OFL.txt and a populated FONTLOG.txt template are included with Reserved Font Name policy documented.",
+    "provenance.json schema is defined with per-glyph-source granularity, recording: origin, license, designer, references, date, reviewer, community sign-off.",
+    "Clean-room policy documents the allowed input allow-list (original clean-room, OFL derivatives, CC0/PD references) and the prohibited-inputs deny-list (proprietary tracing/autotracing, unknown-provenance sources).",
+    "Output-license matrix is documented: OFL-1.1 for fonts, MIT for code/tooling, CC-BY-4.0 for docs/data/specimens.",
+    "Policy explains that US typeface-design copyright carve-out is deliberately not relied upon; the stricter clean-room standard applies for global redistribution safety.",
+    "No secrets, tokens, or API keys are included in any committed document."
+  ],
+  "resources": [
+    "https://scripts.sil.org/ofl",
+    "https://scripts.sil.org/OFL_web",
+    "PLAN.md (section 7: data, licensing & compliance)",
+    "TASKS.md (section: licensing & provenance framework)"
+  ],
+  "output": "A document (or set of committed files) establishing the provenance.json schema, OFL.txt/FONTLOG.txt templates, clean-room policy, prohibited-inputs list, and output-license matrix, merged as a PR to the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

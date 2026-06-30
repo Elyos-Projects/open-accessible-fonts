@@ -1,0 +1,35 @@
+{
+  "id": "fonts-qa-002",
+  "title": "CI QA gate: FontBakery + HarfBuzz shaping diff + coverage report",
+  "project": "open-accessible-fonts",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["typography", "open-source", "tooling", "ci-cd", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-accessible-fonts requires automated quality gates so every font PR is verified before merge. The M0 foundation is not complete until FontBakery, HarfBuzz shaping diffs, and language-coverage reports run automatically on every PR. Depends on the build pipeline from fonts-infra-001 being in place.",
+  "objective": "Add GitHub Actions CI that runs FontBakery (Universal + Google Fonts profiles), a HarfBuzz shaping diff against a test-string set, and a Unicode/language-coverage report (gflanguages/Hyperglot) on every pull request, failing the build on any FontBakery FAIL and surfacing WARNs for triage.",
+  "acceptanceCriteria": [
+    "On every PR, CI runs FontBakery with Universal and GF profiles; the build fails on any FAIL result; WARNs are reported as artifacts for triage.",
+    "HarfBuzz shaping diff (diffenator2 or fontproof) runs against a documented test-string set and reports diffs as downloadable CI artifacts.",
+    "A Unicode + language-coverage report (gflanguages/Hyperglot) is generated and attached to each CI run.",
+    "CI configuration is checked into the repository with pinned tool versions; no proprietary tools or external services beyond GitHub Actions are required.",
+    "No secrets, tokens, or API keys are written to CI logs or artifacts."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/fontbakery",
+    "https://github.com/googlefonts/diffenator2",
+    "https://github.com/googlefonts/gflanguages",
+    "https://github.com/googlefonts/hyperglot",
+    "https://harfbuzz.github.io/",
+    "PLAN.md (section 6: QA pipeline)"
+  ],
+  "output": "A pull request adding a GitHub Actions workflow that runs FontBakery, HarfBuzz shaping diffs, and language-coverage reporting on every PR, with results surfaced as CI artifacts and build-blocking on FAIL.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

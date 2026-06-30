@@ -1,0 +1,34 @@
+{
+  "id": "fonts-test-103",
+  "title": "Legibility proofing + accessibility-expert + lived-experience review",
+  "project": "open-accessible-fonts",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "typography", "research", "open-source"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The Elyos quality bar for the M1 accessibility family requires specialist and lived-experience sign-off before release. After the glyphs are drawn (fonts-design-102), the family must be reviewed by an accessibility/vision specialist and at least two lived-experience reviewers (low-vision and/or dyslexic readers). This task coordinates that review and documents its outcome honestly, including any null or mixed findings.",
+  "objective": "Coordinate and document legibility proofing and human review of the drawn Latin family by an accessibility/vision specialist and ≥2 lived-experience reviewers (low-vision and/or dyslexic readers), recording sign-off or feedback-driven changes, verifying non-medical framing, and reporting any null or mixed findings honestly.",
+  "acceptanceCriteria": [
+    "Accessibility/vision specialist sign-off is recorded; the non-medical framing text ('designed using published legibility research; not a treatment, not a diagnosis, not a medical device') is verified present in README, specimen, and usage guide.",
+    "At least two lived-experience reviewers (low-vision and/or dyslexic readers) provide consented, aggregate feedback; no disability status is tied to an identifiable person in any recorded output.",
+    "Any feedback-driven glyph changes are logged with rationale; if changes are made, fonts-design-102 is updated accordingly.",
+    "If validation results are null or mixed, the result is reported honestly and the family is reframed as 'high-legibility, openly licensed' rather than suppressing the finding.",
+    "Review report is CC-BY-4.0; reviewer names appear only with their explicit consent; pseudonyms honored.",
+    "No health, disability, or personally identifiable information is published; all reviewer data is aggregate and de-identified."
+  ],
+  "resources": [
+    "PLAN.md (section 4: success metrics — O8 honesty clause)",
+    "PLAN.md (section 8: required reviews before a deed is done)",
+    "TASKS.md (acceptance criteria for fonts-test-103)",
+    "fonts-research-005 (accessibility evidence brief)"
+  ],
+  "output": "A review report document (CC-BY-4.0) recording accessibility specialist and lived-experience reviewer sign-off (or honest null/mixed results), the non-medical framing verification, and any feedback-driven design changes, merged into the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

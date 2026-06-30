@@ -1,0 +1,34 @@
+{
+  "id": "fonts-web-302",
+  "title": "Web delivery kit (WOFF2 + @font-face snippets) + accessibility usage guide",
+  "project": "open-accessible-fonts",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["accessibility", "typography", "open-source", "i18n", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Shipped WOFF2 files are only as useful as the guidance for using them correctly on the web. M3 requires a web delivery kit with ready-to-use @font-face snippets and an accessibility usage guide covering size, contrast, and line-length recommendations per WCAG — framed as guidance, not a compliance certification — and repeating the non-medical framing from M1.",
+  "objective": "Publish a web delivery kit with WOFF2 files and ready-to-use @font-face CSS snippets, plus an accessibility usage guide covering size, contrast, and line-length recommendations referencing WCAG as guidance (not certification), including the non-medical framing text.",
+  "acceptanceCriteria": [
+    "WOFF2 files for all shipped families are included or linked in the kit.",
+    "Ready-to-use @font-face CSS snippets are published and tested against at least one browser.",
+    "Accessibility usage guide covers: minimum recommended font size, contrast ratios (referencing WCAG AA/AAA as guidance), line length, and line spacing recommendations.",
+    "Guide explicitly frames all recommendations as guidance, not WCAG compliance certification; non-medical framing text is repeated verbatim.",
+    "Guide is CC-BY-4.0 and freely embeddable by downstream Elyos projects (literacy-from-zero, decodable-readers, caption-commons, etc.).",
+    "No secrets, tokens, or API keys are included in any web kit artifact."
+  ],
+  "resources": [
+    "https://www.w3.org/WAI/WCAG21/Understanding/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face",
+    "PLAN.md (section 5: scope — web delivery kit)",
+    "TASKS.md (acceptance criteria for fonts-web-302)"
+  ],
+  "output": "A published web delivery kit document (CC-BY-4.0) with WOFF2 + @font-face snippets and an accessibility usage guide referencing WCAG and including non-medical framing, merged into the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fonts-multiscript-308",
+  "title": "Multi-script harmonization: Latin + community script in one unified family",
+  "project": "open-accessible-fonts",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["typography", "i18n", "design-spec", "open-source", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Multi-script harmonization — combining Latin and an under-served script in one type family with consistent weight, spacing, and visual style — is advanced type design work. It requires both the Latin family (fonts-ship-104) and a community-co-designed script (fonts-script-204) to be stable, and needs co-design with both communities. This is a future/backlog item with significant complexity and community coordination requirements.",
+  "objective": "Design and draw a harmonized multi-script family that combines the Latin accessibility family and at least one community co-designed script in a single, visually consistent type family with shared weight, spacing, and stylistic rationale.",
+  "acceptanceCriteria": [
+    "Both the Latin family and the target script family are stable and released before this work begins.",
+    "Both affected communities (Latin accessibility reviewers and the script community) have co-signed the harmonization brief.",
+    "Unified family maintains visual harmony: consistent weight contrast, x-height relationship, and spacing rhythm between scripts.",
+    "All script-specific OpenType GSUB/GPOS features are preserved and verified clean via HarfBuzz.",
+    "FontBakery Universal + GF profiles pass (no FAIL) for the unified family.",
+    "provenance.json covers all glyphs in both scripts; no proprietary derivation."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/noto-fonts",
+    "https://github.com/googlefonts/fontmake",
+    "PLAN.md (section 3: goals — multi-script)",
+    "TASKS.md (backlog — fonts-multiscript-308)"
+  ],
+  "output": "A pull request adding a harmonized multi-script font family (Latin + community script) with shared UFO source structure, passing CI gates, and provenance documentation for both script communities.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}
