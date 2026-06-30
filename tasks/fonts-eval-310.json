@@ -1,0 +1,35 @@
+{
+  "id": "fonts-eval-310",
+  "title": "Partner-run legibility validation study (consented, aggregate, de-identified)",
+  "project": "open-accessible-fonts",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "research", "typography", "open-source"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Success metric O8 in PLAN.md calls for documented, honest legibility validation — including null/mixed results. This project defaults to relying on published/partner research to avoid human-subjects and PII burden, but if a partner offers to run a consented, aggregate, de-identified study on the shipped accessibility family, this task coordinates and documents the outcome. PII constraints are strict: no disability status or health data may be tied to an identifiable person. Not started without a confirmed partner offering to run the study.",
+  "objective": "Coordinate and document a partner-run legibility validation study of the shipped accessibility-first Latin family (and/or non-Latin accessibility face if available), covering consented, aggregate, de-identified reader feedback; report results honestly including null or mixed findings.",
+  "acceptanceCriteria": [
+    "A named partner offers to conduct the study; verifiedNeed remains false until this offer is confirmed.",
+    "Study is designed and run by the partner, not by this project; this project coordinates logistics and documents the outcome.",
+    "Study protocol includes informed consent from participants; no disability status, health data, or personally identifiable information is tied to individual results.",
+    "Results are reported aggregate and de-identified; no identifiable person's disability or reading difference status is published.",
+    "Findings are published honestly: null or mixed results are reported as such per the O8 honesty clause; no suppression of unfavorable data.",
+    "If results are null/mixed, the family is reframed as 'high-legibility, openly licensed' rather than presenting the findings as positive.",
+    "Document is CC-BY-4.0; study methodology and limitations documented."
+  ],
+  "resources": [
+    "PLAN.md (section 4: success metrics — O8 honesty clause)",
+    "PLAN.md (section 7: privacy/PII — disability status as sensitive PII)",
+    "PLAN.md (section 14: security & privacy)",
+    "TASKS.md (backlog — fonts-eval-310: only if a partner offers)"
+  ],
+  "output": "A published partner-run legibility study report (CC-BY-4.0) documenting aggregate, de-identified results from a consented reader study, including honest reporting of null or mixed findings, merged into the project repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

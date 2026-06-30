@@ -1,0 +1,34 @@
+{
+  "id": "fonts-italic-306",
+  "title": "Italic / true-cursive styles for shipped Latin and script families",
+  "project": "open-accessible-fonts",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["typography", "accessibility", "design-spec", "open-source", "i18n"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Italic and true-cursive styles expand the typographic utility of shipped families for body text, educational materials, and emphasis. This is a backlog/future item scheduled after upright styles are stable (post fonts-ship-104). Drawing italics is significant additional craft work; the accessibility-differentiation set must be re-applied to italic forms. Not started until uprights are stable and reviewed.",
+  "objective": "Design and draw true italic styles for the shipped Latin accessibility family and any applicable script families, applying accessibility-critical glyph differentiation to italic forms, building cleanly through the pipeline, and shipping as part of an updated font release.",
+  "acceptanceCriteria": [
+    "True italic (not slanted roman) styles drawn for the Latin accessibility family; italic forms maintain the accessibility differentiation set (I/l/1, O/0, b/d/p/q, rn/m).",
+    "UFO italic source + designspace commits cleanly; builds to static and variable binaries.",
+    "FontBakery Universal + GF profiles pass (no FAIL) for italic instances; WARNs triaged.",
+    "Variable font italic axis or separate italic family integrates correctly with existing upright.",
+    "provenance.json updated with italic glyph source records.",
+    "No proprietary tracing; clean-room or OFL/PD-derived italic sources only."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/fontmake",
+    "https://github.com/googlefonts/glyphsets",
+    "PLAN.md (section 5: scope)",
+    "TASKS.md (backlog — fonts-italic-306)"
+  ],
+  "output": "A pull request adding true italic styles to the shipped Latin (and applicable script) families, with updated UFO source, designspace, built binaries, and provenance.json.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

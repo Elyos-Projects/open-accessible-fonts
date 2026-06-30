@@ -1,0 +1,33 @@
+{
+  "id": "fonts-gov-006",
+  "title": "Governance + community co-design protocol + reviewer roster",
+  "project": "open-accessible-fonts",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["open-source", "typography", "accessibility", "i18n", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-accessible-fonts involves community co-design for under-served scripts and lived-experience review for accessibility work. Without a published governance protocol and reviewer roster (even with roles TBD), there is no agreed process for community veto, change requests, or reviewer assignment. Depends on fonts-legal-003 to have the provenance and license framework in place first.",
+  "objective": "Write and publish the project governance document, community co-design protocol (including community veto and change-request rights for script partners), and a reviewer roster template (roles defined even if names are TBD) covering maintainer, type design reviewer, script authority/community partner, accessibility specialist, lived-experience reviewers, and steward.",
+  "acceptanceCriteria": [
+    "Governance document defines project roles: maintainer, type design reviewer, script authority/community partner, accessibility/vision specialist, lived-experience reviewer(s), steward, requestor/beneficiary.",
+    "Community co-design protocol states that script partners hold an effective veto on glyph forms and naming, and that decisions and change-requests are logged publicly.",
+    "Protocol specifies the entry gate for M2: a named community partner must co-sign the orthography and design brief before any glyph drawing begins.",
+    "Reviewer roster template is included with role definitions and placeholder slots for TBD names; consent-only credit and pseudonym policy stated.",
+    "Release checklist references reviewer sign-off requirements from PLAN.md section 8 (QA/review gates).",
+    "Document is CC-BY-4.0; no identifiable personal data included without consent."
+  ],
+  "resources": [
+    "PLAN.md (section 11: governance, roles & stakeholders)",
+    "PLAN.md (section 8: quality, review & risk gates)",
+    "TASKS.md (milestone M0 definition of done)"
+  ],
+  "output": "A governance document (CC-BY-4.0) defining roles, co-design protocol with community veto rights, reviewer roster template, and release checklist, merged into the repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

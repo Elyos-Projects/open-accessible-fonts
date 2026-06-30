@@ -1,0 +1,34 @@
+{
+  "id": "fonts-ship-104",
+  "title": "Release v1.0 accessibility-first Latin family (static + variable + WOFF2 + specimen) under OFL",
+  "project": "open-accessible-fonts",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["typography", "accessibility", "open-source", "i18n", "tooling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "With the Latin family drawn (fonts-design-102), reviewed (fonts-test-103), and QA gates in place (fonts-qa-002), M1 culminates in a tagged v1.0 release. Per the Elyos quality bar, a font is 'delivered, not merged': it must pass automated QA, have complete OFL/FONTLOG/provenance artifacts, and achieve at least one real adoption event — a Google Fonts submission opened, or deployment in a real document handed to a beneficiary.",
+  "objective": "Package and tag v1.0 of the accessibility-first Latin family with static OTF/TTF, variable TTF, WOFF2, type specimen, complete OFL.txt/FONTLOG.txt/provenance.json, and at least one adoption event (Google Fonts submission opened or deployment in a delivered document).",
+  "acceptanceCriteria": [
+    "Tagged v1.0 release includes: static OTF, static TTF, variable TTF, WOFF2, type specimen PDF, OFL.txt, FONTLOG.txt, provenance.json.",
+    "All CI/QA gates pass: FontBakery Universal + GF profiles (no FAIL), HarfBuzz shaping diff clean, reproducible build verified.",
+    "At least one adoption event is documented: a Google Fonts submission PR opened, or the font deployed in a real delivered document (e.g. a downstream Elyos OER artifact) and handed to a beneficiary.",
+    "Non-medical framing text is present verbatim in README, specimen, and usage guide.",
+    "FONTLOG.txt credits all contributors (with their consent); provenance.json is complete with all glyph sources recorded.",
+    "No secrets, tokens, or API keys are present in the release artifacts or CI logs."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/fonts",
+    "https://github.com/googlefonts/gftools",
+    "PLAN.md (section 8: definition of shipped)",
+    "TASKS.md (acceptance criteria for fonts-ship-104)"
+  ],
+  "output": "A pull request and tagged GitHub release (v1.0) containing the complete accessibility-first Latin family: static + variable + WOFF2, type specimen, OFL.txt, FONTLOG.txt, provenance.json, with at least one documented adoption event.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

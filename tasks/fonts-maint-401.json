@@ -1,0 +1,34 @@
+{
+  "id": "fonts-maint-401",
+  "title": "Upstream onboarding (Google Fonts / Noto) or named community-maintainer handoff",
+  "project": "open-accessible-fonts",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["typography", "open-source", "i18n", "accessibility", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Per Elyos's definition of delivered, a font must be *actually adopted* to count as done. M4 ensures long-term sustainability: at least one family must be accepted into a durable upstream (Google Fonts or Noto) or have a named community maintainer committed in writing. This prevents the fonts from becoming orphaned after project completion. Depends on the Latin family (fonts-ship-104) and ideally the script family (fonts-script-204) being released first.",
+  "objective": "Submit at least one shipped font family for acceptance into Google Fonts or Noto, or secure a committed named community maintainer in writing, meeting upstream specs (METADATA, license, FONTLOG, build) and documenting the handoff.",
+  "acceptanceCriteria": [
+    "At least one family is submitted for acceptance into a durable upstream (Google Fonts or Noto) via a formal submission PR, or a named community maintainer commits in writing to maintain the font.",
+    "Repository meets upstream specs: METADATA, OFL.txt, FONTLOG.txt, reproducible build, and FontBakery pass.",
+    "Submission or handoff is documented in the repository; the named maintainer or upstream acceptance is recorded.",
+    "If the upstream submission is rejected, the rejection reason is documented and a named community maintainer alternative is pursued.",
+    "No secrets, tokens, or API keys are introduced in the upstreaming PR or handoff documentation."
+  ],
+  "resources": [
+    "https://github.com/google/fonts/blob/main/CONTRIBUTING.md",
+    "https://github.com/googlefonts/noto-fonts",
+    "https://github.com/googlefonts/gftools",
+    "PLAN.md (section 15: sustainability & maintenance)",
+    "TASKS.md (acceptance criteria for fonts-maint-401)"
+  ],
+  "output": "A pull request to Google Fonts or Noto upstreaming at least one shipped family, or documented written commitment from a named community maintainer, with the handoff recorded in the project repository.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

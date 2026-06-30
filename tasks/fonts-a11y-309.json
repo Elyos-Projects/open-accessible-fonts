@@ -1,0 +1,34 @@
+{
+  "id": "fonts-a11y-309",
+  "title": "Accessibility-first design face for a non-Latin community script",
+  "project": "open-accessible-fonts",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "typography", "i18n", "design-spec", "open-source"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "This backlog task combines both program goals: apply the accessibility-first design principles from the Latin family (M1) to a non-Latin community-co-designed script (M2 pattern). It requires a secured script community partner, a completed accessibility evidence base, and significant expert co-ordination. This is advanced, high-coordination work combining the most complex elements of the program; it is appropriately deferred until both the Latin and first script families are proven.",
+  "objective": "Co-design with a community partner an accessibility-first type family for a non-Latin script, applying published legibility principles to the script's forms with community review, lived-experience review from readers of that script, and honest non-medical framing.",
+  "acceptanceCriteria": [
+    "A named community partner for the target script is secured in writing before any work begins; verifiedNeed remains false until then.",
+    "Accessibility specialists and lived-experience reviewers (users of the target script with low vision or relevant reading differences) are secured and co-sign the design brief.",
+    "Design applies legibility principles (where applicable from published research or community-specified need) adapted for the specific visual structure of the script.",
+    "Non-medical framing text is applied; no medical or clinical efficacy claims made.",
+    "All M2 criteria (co-signed brief, glyph drawing, HarfBuzz clean, native-reader review, OFL release with provenance) are met.",
+    "At least one adoption event: community use confirmed or upstream PR initiated."
+  ],
+  "resources": [
+    "PLAN.md (section 3: goals — O3 accessibility families)",
+    "TASKS.md (backlog — fonts-a11y-309)",
+    "fonts-research-005 (accessibility evidence brief)",
+    "fonts-script-201 through fonts-script-204 (M2 process template)"
+  ],
+  "output": "A pull request and tagged release for an accessibility-first non-Latin script font family, co-designed with its community, with specialist and lived-experience sign-off, passing CI gates, complete OFL/provenance artifacts, and at least one adoption event.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

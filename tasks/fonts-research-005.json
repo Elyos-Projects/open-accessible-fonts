@@ -1,0 +1,35 @@
+{
+  "id": "fonts-research-005",
+  "title": "Accessibility/legibility evidence brief (low-vision + honest on contested dyslexia-font claims)",
+  "project": "open-accessible-fonts",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "typography", "research", "i18n", "open-source"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-accessible-fonts will produce an accessibility-first Latin family. Before any design work begins, the project needs a clear, honest evidence brief that separates what published research actually supports from contested or unsupported claims — particularly for dyslexia-specific font interventions, where the literature is mixed. This brief drives the M1 design brief and establishes the non-medical framing used in all project artifacts.",
+  "objective": "Summarize published legibility evidence for low-vision and dyslexic readers, honestly characterizing contested findings, derive the accessibility-critical glyph-differentiation set, and define the standard non-medical framing text for all project artifacts.",
+  "acceptanceCriteria": [
+    "Brief summarizes published evidence on legibility for low-vision readers (macular degeneration, cataract, low acuity), covering letter differentiation, x-height, spacing, contrast, and aperture.",
+    "Brief honestly characterizes the contested, mixed evidence on dyslexia-specific fonts: cites both supporting and null/contrary findings; explicitly does not over-claim; does not assert clinical efficacy.",
+    "Brief defines the standard non-medical framing text to be reused verbatim in README, specimens, and usage guides: 'designed using published legibility research; not a treatment, not a diagnosis, not a medical device.'",
+    "Brief lists the accessibility-critical glyph-differentiation set (I/l/1, O/0, b/d/p/q, rn/m, and related confusable pairs) to drive the M1 design brief.",
+    "Reviewer sign-off from an accessibility/vision specialist is recorded as required before the brief is used to inform medical or efficacy framing; without this sign-off, the brief is marked as pending specialist review.",
+    "Document is CC-BY-4.0; all cited works are referenced with sufficient detail to locate; no identifiable human-subjects data included."
+  ],
+  "resources": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6297746/",
+    "https://brailleinstitute.org/freefont",
+    "https://www.w3.org/WAI/WCAG21/Understanding/",
+    "PLAN.md (section 3: goals — honesty on dyslexia font claims)",
+    "TASKS.md (acceptance criteria for fonts-research-005)"
+  ],
+  "output": "A published evidence brief (CC-BY-4.0) covering low-vision and dyslexia legibility research, including the standard non-medical framing text, the accessibility-critical differentiation glyph set, and an honest summary of contested claims, merged into the repository documentation.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

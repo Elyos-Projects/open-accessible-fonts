@@ -1,0 +1,36 @@
+{
+  "id": "fonts-design-102",
+  "title": "Draw core Latin glyph set (UFO source, GF Latin Core + accessibility differentiation set)",
+  "project": "open-accessible-fonts",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["typography", "accessibility", "design-spec", "open-source", "i18n"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "With the design brief (fonts-design-101) and build pipeline (fonts-infra-001) in place, M1 requires the actual glyph drawing work. This is the craft-heavy core of the M1 milestone: drawing the accessibility-first Latin family in UFO format, covering GF Latin Core plus the accessibility-critical differentiation set, with a variable weight axis. Slow, unforgiving work; quality is non-negotiable.",
+  "objective": "Draw the core Latin glyph set as a clean-room original in UFO 3 + designspace, covering GF Latin Core and the accessibility-critical differentiation set (I/l/1, O/0, b/d/p/q, rn/m) with distinct, non-confusable letterforms, a variable weight axis, and spacing/kerning reviewed, building cleanly through the M0 pipeline with FontBakery green.",
+  "acceptanceCriteria": [
+    "UFO source covers GF Latin Core plus the accessibility differentiation set with distinct, non-confusable forms for I/l/1, O/0, b/d/p/q, rn/m, and related confusable pairs.",
+    "Builds cleanly through the M0 pipeline (fontmake + gftools + fontTools); FontBakery Universal and GF profiles pass with no FAIL; WARNs triaged and documented.",
+    "Variable weight axis builds correctly; static weight instances export as OTF and TTF without errors.",
+    "Spacing and kerning have been reviewed; no unintended collisions or gaps at representative type sizes.",
+    "provenance.json records every glyph source as original clean-room or OFL/PD-derived with attribution; no proprietary derivation.",
+    "All drawings are original clean-room work or explicitly documented OFL/PD-derived forms; no tracing or autotracing from proprietary fonts."
+  ],
+  "resources": [
+    "https://github.com/googlefonts/glyphsets",
+    "https://github.com/googlefonts/fontmake",
+    "https://github.com/fonttools/fonttools",
+    "https://unifiedfontobject.org/",
+    "PLAN.md (section 6: pipeline and key decisions)",
+    "TASKS.md (acceptance criteria for fonts-design-102)"
+  ],
+  "output": "A pull request adding the UFO source, designspace, and built OTF/TTF/variable/WOFF2 artifacts for the accessibility-first Latin family, with provenance.json, passing FontBakery, and a type designer's review note.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

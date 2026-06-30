@@ -1,0 +1,35 @@
+{
+  "id": "fonts-var-301",
+  "title": "Consolidate variable axes (weight; optical size where justified) across shipped families",
+  "project": "open-accessible-fonts",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["typography", "open-source", "tooling", "accessibility", "i18n"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "After v1.0 of the accessibility-first Latin family ships (fonts-ship-104), M3 broadens and hardens the variable-font coverage across the portfolio. Variable axes reduce per-weight drawing cost and give downstream users flexibility; this task ensures the axis strategy is consistent, QA-green, and documented across all shipped families.",
+  "objective": "Consolidate and document the variable-axis implementation across all shipped families: confirm the weight axis is consistent and QA-green, add an optical-size axis where technically justified with rationale, and ensure all static instance exports are correct and reproducibly buildable.",
+  "acceptanceCriteria": [
+    "Weight axis is present and QA-green (no FontBakery FAIL) across all shipped families.",
+    "An optical-size axis is added where justified; rationale documented; if not added, the decision is recorded.",
+    "All static weight instances export correctly as OTF and TTF without errors.",
+    "Variable font builds pass FontBakery Universal + GF profiles (no FAIL) and HarfBuzz shaping diffs.",
+    "Reproducible build verified: clean-environment rebuild yields byte-stable variable TTF artifacts.",
+    "No secrets, tokens, or API keys are introduced in build scripts or CI configuration."
+  ],
+  "resources": [
+    "https://fonts.google.com/knowledge/glossary/variable_fonts",
+    "https://github.com/googlefonts/fontmake",
+    "https://github.com/googlefonts/gftools",
+    "PLAN.md (section 6: key decisions — variable-first)",
+    "PLAN.md (section 9: M3 exit criteria)"
+  ],
+  "output": "A pull request consolidating the variable-axis implementation across shipped families, with updated designspace files, axis rationale documentation, and all CI gates passing.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "OFL-1.1"
+}

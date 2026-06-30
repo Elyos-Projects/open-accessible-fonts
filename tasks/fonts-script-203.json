@@ -1,0 +1,33 @@
+{
+  "id": "fonts-script-203",
+  "title": "Native-reader shaping & correctness review for the community script font",
+  "project": "open-accessible-fonts",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["i18n", "typography", "accessibility", "research", "open-source"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "For any under-served script, the Elyos quality bar requires native-reader / script-authority correctness review before release. After glyphs and shaping are drawn (fonts-script-202), one or more native readers or script authorities must review the rendered output for correctness and cultural appropriateness. A font with wrong script forms is worse than no font; this review is a hard gate, not optional.",
+  "objective": "Coordinate and document native-reader and script-authority correctness review of the drawn script font, covering glyph forms, contextual shaping, diacritics, spacing, and cultural appropriateness; record 100% pass or remediation steps before release.",
+  "acceptanceCriteria": [
+    "At least one native reader or script authority provides a documented correctness review of the rendered output against community-standard forms.",
+    "Review covers: glyph forms, contextual shaping (GSUB/GPOS), diacritic placement, spacing, and cultural/community appropriateness.",
+    "Any errors identified result in changes to fonts-script-202 before the release task (fonts-script-204) proceeds; all identified errors are resolved or explicitly acknowledged as known limitations.",
+    "Native-reader correctness review is recorded as passing (100%) or the unresolved issues are documented with community agreement.",
+    "Reviewer credit is recorded only with explicit consent; pseudonyms honored; no personal data published without consent.",
+    "Review report is CC-BY-4.0; no identifiable personal data included without consent."
+  ],
+  "resources": [
+    "PLAN.md (section 8: required reviews — script authority sign-off)",
+    "TASKS.md (M2 definition of done)",
+    "fonts-script-201 (orthography and design brief — defines the target forms)"
+  ],
+  "output": "A native-reader correctness review report (CC-BY-4.0) documenting sign-off (or remediation steps) on glyph forms, shaping, and cultural appropriateness, merged into the repository before the M2 release task.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
